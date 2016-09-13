@@ -1,0 +1,9 @@
+var people = document.getElementsByClassName("_gll");
+var peopleLinks = []; 
+for(var i = 0; i < people.length; i ++){ 
+	var obj = {};
+	obj= ((people[i].childNodes[0].innerHTML).replace("<a href=\"https://www.facebook.com/", ""));
+	obj = obj.substring(0, obj.indexOf("?")) + "@facebook.com";
+   peopleLinks.push(obj);
+}
+JSON.stringify(peopleLinks);
