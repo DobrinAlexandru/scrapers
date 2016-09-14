@@ -1,0 +1,7 @@
+var people = document.getElementsByClassName("_4zhc5 notranslate _j7lfh");
+var peopleLinks = []; 
+for(var i = 0; i < people.length; i ++){ 
+	peopleLinks.push(people[i].innerHTML); 
+}
+
+JSON.stringify(peopleLinks);
